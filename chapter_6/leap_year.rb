@@ -5,6 +5,12 @@ puts 'Enter the ending year'
 year_e = gets.chomp
 ending_year = year_e.to_i
 
+while ending_year < starting_year
+  puts 'Enter an year that is greater than the starting year'
+  year_e = gets.chomp
+  ending_year = year_e.to_i
+end
+
 while starting_year <= ending_year
   if starting_year % 4 == 0
     if (starting_year % 100 == 0)
