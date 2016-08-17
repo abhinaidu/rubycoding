@@ -1,23 +1,25 @@
-puts 'Enter the year'
+puts 'Enter the starting year'
 year_s = gets.chomp
-year = year_s.to_i
-while year > 0
-  if year % 4 == 0
-    if (year % 100 == 0)
-      if (year % 400 == 0)
-        puts "#{year} is a leap year"
-        exit
+starting_year = year_s.to_i
+puts 'Enter the ending year'
+year_e = gets.chomp
+ending_year = year_e.to_i
+
+while starting_year <= ending_year
+  if starting_year % 4 == 0
+    if (starting_year % 100 == 0)
+      if (starting_year % 400 == 0)
+        puts "#{starting_year} is a leap year"
       else
-        puts "#{year} is not a leap year"
-        exit
+#        puts "#{starting_year} is not a leap year"
       end
     else    
-      puts "#{year} is a leap year"
-      exit
+      puts "#{starting_year} is a leap year"
     end
   else 
-    puts "#{year} is not a leap year"
-    exit
+#    puts "#{starting_year} is not a leap year"
   end
+starting_year += 1
 end
-puts 'Enter a valid year'
+
+
