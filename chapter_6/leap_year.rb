@@ -19,7 +19,8 @@ while starting_year <= ending_year
       puts "#{starting_year} is a leap year"
     end
   end
-starting_year += 1
+
+  starting_year += 1
 end
 
 

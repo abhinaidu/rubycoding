@@ -8,7 +8,7 @@ while count < 3
     count += 1
 
     if count < 3
-    puts 'HUH?! SPEAK UP, SONNY!'
+      puts 'HUH?! SPEAK UP, SONNY!'
     end
   else 
     count = 0
