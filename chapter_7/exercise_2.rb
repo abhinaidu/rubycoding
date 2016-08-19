@@ -11,8 +11,7 @@ while array.last != ""
   n += 1
 end
 
-array.sort.each do |a|
- puts a
-end
+#Adjusting the index from the previous while loop
+n -= 1
 
-    
+
