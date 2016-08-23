@@ -11,8 +11,4 @@ while array.last != ""
   n += 1
 end
 
-array.sort.each do |a|
- puts a
-end
-
-    
+puts array.sort    
